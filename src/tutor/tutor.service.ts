@@ -33,7 +33,7 @@ export class TutorService {
     page: number,
   ): Promise<{ data: TutorDTO[]; totalPages: number }> {
     try {
-      const recordsPerPage = 5; // 10 tutors per page
+      const recordsPerPage = 15; // 10 tutors per page
 
       if (page < 1) {
         throw new BadRequestException('Page number must be a positive integer');
